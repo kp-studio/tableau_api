@@ -2,7 +2,7 @@
 
 module TableauApi
   class Connection
-    API_VERSION = '3.1'
+    API_VERSION = '3.6'.freeze
 
     include HTTParty
     headers 'User-Agent' => "tableau_api/#{::TableauApi::VERSION} Ruby/#{RUBY_VERSION}"
